@@ -1,2 +1,2 @@
 # FivePillars
-Five Pillars School Website
+Website for the Five Pillars school in Moshi, Tanzania. 
