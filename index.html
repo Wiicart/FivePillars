@@ -26,6 +26,7 @@
             margin-bottom: 1%;
             background-color: #2A9D8F;
             color: white;
+            border-bottom: solid black 1px;
         }
         body, h1{
             padding: 0;
@@ -45,19 +46,24 @@
         }
         .card{
             background-color: #ffffff;
-            max-width: 45%;
-            min-width: 40%;
+            max-width: 35%;
+            min-width: 30%;
             border: 1px solid black;
             margin-left: 5%;
             margin-right: 5%;
+            margin-top: 5%;
             border-radius: 5px 5px 5px 5px;
+            flex-basis: 100%;
         }
         .card-img{
-            max-width: 40%;
+            max-width: 35%;
+            min-width: 30%;
             border: 1px solid black;
             margin-left: 5%;
             margin-right: 5%;
+            margin-top: 5%;
             border-radius: 5px 5px 5px 5px;
+            flex-basis: 100%;
         }
         .card-header{
             background-color: #2A9D8F;
@@ -74,6 +80,10 @@
         #cards{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 100%;
+            position: relative;
+            justify-content: center;
 
         }
         .card-body{
@@ -98,7 +108,17 @@
             margin-bottom: 0;
             margin-left: 2.5%;
             margin-right: 2.5%;
-
+        }
+        /* w3 Schools */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card, .card-img{
+                max-width: 90%;
+                min-width: 90%;
+            }
         }
     </style>
 </head>
@@ -120,6 +140,43 @@
             </div>
         </div>
         <img class="card-img" src="img/building.png" alt="building">
+        <div class="card">
+            <h3 class="card-header syne">Background</h3>
+            <div class="card-body work-sans">
+                <p class="card-body-p">
+                    <br/>Currently African children deserve special attention.<br/><br/>
+                    Decreases in infant mortality has made the population distribution
+                    of sub-saharan Africa extremely skewed towards children, with estimates finding
+                    that 46% of the population is under 15.<br/><br/>
+                    These children have great potential but the socio-economic situation in Africa
+                    is not prepared for them.<br/><br/>
+                    As a school, Five Pillars aims to increase access to education for Moshi's youth,
+                    regardless of ethnic or religious background.
+                </p>
+            </div>
+        </div>
+        <img class="card-img" src="img/students-2.png" alt="students">
+        <div class="card">
+            <h3 class="card-header syne">Objectives</h3>
+            <div class="card-body work-sans">
+                <ul>
+                    <li>To contribute to the education of disabled children, who are increasingly
+                        being exposed to to the negative impacts of poverty.
+                    </li>
+                    <br/>
+                    <li>To promote an atmosphere where children feel loved, so they can grow
+                        with love and self respect and reach their greatest potential.
+                    </li>
+                    <br/>
+                    <li>To protect children.</li>
+                    <br/>
+                    <li>To create educational opportunities for low income students.</li>
+                    <br/>
+                    <li>To strengthen programs that help children reach their full potential.</li>
+                </ul>
+            </div>
+        </div>
+        <img class="card-img" src="img/outside.png" alt="outside">
     </div>
 
     
