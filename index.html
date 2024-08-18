@@ -17,7 +17,7 @@
         .work-sans{
             font-family: "Work Sans", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 100;
+            font-weight: 300;
             font-style: normal;
         }
         #head{
@@ -44,18 +44,61 @@
             background-color: #dce5e6;
         }
         .card{
+            background-color: #ffffff;
             max-width: 45%;
+            min-width: 40%;
             border: 1px solid black;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 5px 5px 5px 5px;
         }
         .card-img{
-            max-width: 100%;
+            max-width: 40%;
             border: 1px solid black;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 5px 5px 5px 5px;
         }
         .card-header{
-            
+            background-color: #2A9D8F;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            min-height: 10%;
+            font-size: 300%;
+            padding: 0;
+            border-radius: 4px 4px 0 0;
+            border-bottom: solid black 1px;
+            margin-bottom: 0;
         }
         #cards{
             display: flex;
+            flex-direction: row;
+
+        }
+        .card-body{
+            background-color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            border-radius: 0 0 5px 5px;
+        }
+        .card-body-head{
+            font-size: xx-large;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .card-body-p{
+            font-size: large;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+
         }
     </style>
 </head>
@@ -65,10 +108,18 @@
         <h2 class="syne" id="bottomhead">Nursery and Primary School</h2>
     </div>
     <div id="cards">
-        <img class="card-img" src="img/students-1.png" alt="building">
+        <img class="card-img" src="img/students-1.png" alt="students">
         <div class="card">
-
+            <h3 class="card-header syne">About</h3>
+            <div class="card-body work-sans">
+                <p class="card-body-head" style="margin-top: 7%;">Founding:</p>
+                <p class="card-body-p" style="margin-bottom: 7%;">We were founded in Moshi, Tanzania in 2020.<br/>
+                We now accomodate disabled children.</p>
+                <p class="card-body-head">Low Income:</p>
+                <p class="card-body-p">We bridge the education gap by providing quality education to children who come from low income households.<br/>Low income students are eligible to have their fees waived, and we provide additional support to them.<br/></p>
+            </div>
         </div>
+        <img class="card-img" src="img/building.png" alt="building">
     </div>
 
     
